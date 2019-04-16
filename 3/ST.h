@@ -1,0 +1,15 @@
+typedef struct STnode* link;
+void STinit();
+int STcount(void);
+Item searchR(link, Key);
+Item STsearch(Key); 
+link rotR(link);
+link rotL(link);
+link RBinsert(link, Item, int);
+void STinsert(Item);
+void sortR(link, void (*visit)(Item));
+void STsort(void (*visit)(Item));
+void STshow(link, int);
+void STshowAll();
+int STBNcount();
+void BNcount(link, int *);

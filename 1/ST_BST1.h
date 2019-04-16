@@ -1,0 +1,11 @@
+typedef struct STnode *link;
+void STinit(int);
+int STcount(void);
+void STinsert(Item);
+Item STsearch(Key);
+void STdelete(Item);
+Item STselect(int);
+void STsort(void (*visit)(Item));
+int CountStheight(link);
+int CountStipathlength(int);
+void StParameter(int);
